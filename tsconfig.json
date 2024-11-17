@@ -1,0 +1,28 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "types": ["node", "vite/client", "@nuxt/types"]
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./**/*.vue",
+    "src/**/*",
+    "node_modules/shadcn-vue/types/**/*",
+    ".nuxt/types/**/*",
+    "types/**/*",
+    ".nuxt/types/components.d.ts",
+    "components.d.ts"
+  ]
+}
